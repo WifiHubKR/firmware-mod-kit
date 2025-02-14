@@ -1,4 +1,5 @@
 # Disclaimer #
+---
 Automatically exported from code.google.com/p/firmware-mod-kit
 
 Firmware Modification Kit
@@ -18,12 +19,27 @@ EULA: By downloading or using this kit, you agree to accept liability for conseq
 
 
 # Firmware Mod Kit #
-
+---
 This is modified version of rampageX/firmware-mod-kit for Ubuntu 24.04.1 LTS version. 
 
 If you need Manual of firmware-mod-kit, visit [here](https://github.com/rampageX/firmware-mod-kit)
 
+# Updates # 
+---
+- Update binwalk version 2.1.1 to 2.3.4 because of imp module error
+  
+> Before update version of binwalk, there is a problem that can't run firmware-mod-kit because of imp module.
+> 
+> 'imp' module is not supported in Python 3.12, but Ubuntu 24.04.1 lts version only support Python 3.12
+
+- Add config.sh script file
+  
+> This file is for setting environment for using firmware-mod-kit.
+>
+> install prerequisites and binwalk python module automatically 
+
 # Installaion #
+---
 You should install firmware-mod-kit as the 'root' user
 
 1. clone this repository
@@ -33,6 +49,6 @@ You should install firmware-mod-kit as the 'root' user
 2. run config.sh for setting new binwalk version
 ```
 $ cd firmware-mod-kit
-$ /config.sh
+$ ./config.sh
 ```
 
