@@ -2,7 +2,7 @@
 
 set -e
 sudo apt update
-sudo apt-get install git build-essential zlib1g-dev liblzma-dev python3-magic autoconf python-is-python3 python3-pip
+sudo apt-get install -y git build-essential zlib1g-dev liblzma-dev python3-magic autoconf python-is-python3 python3-pip
 
 # Temporary fix externally-managed-environment error
 FILE="/usr/lib/python3.12/EXTERNALLY-MANAGED"
